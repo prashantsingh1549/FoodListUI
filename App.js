@@ -154,7 +154,7 @@ const App = () => {
                   )}
                 </View>
               </View>
-              {isDown && isIndex == item.index && search ? (
+              {(isDown && isIndex == item.index) || search ? (
                 <View style={styles.downData}>
                   <FlatList
                     data={item.item.data}
